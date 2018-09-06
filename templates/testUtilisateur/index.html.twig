@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{asset('build/css/app.css')}}">
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        <h1>Coucou</h1>
+        <br>
+            {{unevariable.v1}}
+        </br>
+        <br>
+            {{unevariable.v2}}
+        </br>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
